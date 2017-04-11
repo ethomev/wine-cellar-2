@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence xmlns="http://java.sun.com/xml/ns/persistence" version="2.0">
+
+    <persistence-unit name="wineDB">
+        <provider>org.hibernate.ejb.HibernatePersistence</provider>
+        <jta-data-source>java:/MySQLWineDS</jta-data-source>
+        <properties>
+            <property name="hibernate.archive.autodetection" value="class"/>
+            <property name="hibernate.format_sql" value="true"/>
+            <property name="hibernate.dialect" value="org.hibernate.dialect.MySQLDialect"/>
+            <property name="hibernate.show_sql" value="true"/>
+        </properties>
+    </persistence-unit>
+</persistence>
